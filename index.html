@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>Pre-release 2020</title>
+	</head>
+<body>
+<h1>Pre-release 2020</h1>
+
+<p>Created By: Steven Chao</p>
+
+<p>Last Edited: Jan 13, 2020 3:11 PM</p>
+
+<p><a href="Pre%20release%202020/Scan_Jan_13_2020_at_12.01_PM.pdf">Scan Jan 13, 2020 at 12.01 PM.pdf</a></p>
+
+<ul>
+	<li>Table of Content</li>
+</ul>
+
+<h3>Reminder</h3>
+
+<p>The syllabus states:</p>
+
+<ul>
+	<li>there will be questions on the examination paper which do not relate to this pre-release material.</li>
+	<li>you must choose a high-level programming language from this list:
+
+		<ul>
+			<li>Visual Basic (console mode)</li>
+			<li>Python</li>
+			<li>Pascal / Delphi (console mode)</li>
+		</ul></li>
+</ul>
+
+<p><strong>Note</strong>: A mark of zero will be awarded if a programming language other than those listed is used.</p>
+
+<p>Questions on the examination paper may ask the candidate to write:</p>
+
+<ul>
+	<li>structured English</li>
+	<li>pseudocode</li>
+	<li>program code</li>
+</ul>
+
+<p>A program flowchart should be considered as an alternative to pseudocode for documenting an algorithm design.</p>
+
+<p>Candidates should be confident with:</p>
+
+<ul>
+	<li>the presentation of an algorithm using either a program flowchart or pseudocode</li>
+	<li>the production of a program flowchart from given pseudocode and vice versa.</li>
+</ul>
+
+<p>Some tasks may need one or more of the built-in function or operators listed in the <strong>Appendix</strong> at the end of this document. There will also be a similar appendix at the end of the question paper.</p>
+
+<h3>Declaration of variables</h3>
+
+<p>The syllabus document shows the syntax expected for a declaration statement in pseudocode.</p>
+
+<pre><code>DECLARE &lt;identifier&gt; : &lt;data type&gt;</code></pre>
+
+<p>lf Python is the chosen language, each variable’s identifier (name) and its intended data type must be documented using a comment statement.</p>
+
+<h3>Structured English — Variables</h3>
+
+<p>An algorithm in pseudocode uses variables, which should be declared. An algorithm in structured English does not always use variables. In this case, the candidate needs to use the information given in the question to complete an identifier table. The table needs to contain an identifier, data type and description for each variable.</p>
+
+<h3>Appendix</h3>
+
+<p>Each function returns an error if the function call is not properly formed.</p>
+
+<hr />
+
+<h1>Task 1 — Structure Charts</h1>
+
+<p>Describe a processing activity that can be represented by one main task with two or more sub-tasks.</p>
+
+<p>The activity can relate to any scenario, but should include aspects of selection and iteration.</p>
+
+<p>Activity examples may be taken from different areas, such as:</p>
+
+<ul>
+	<li>school or college</li>
+	<li>factory or workplace</li>
+	<li>clubs or hobbies.</li>
+</ul>
+
+<h2>TASK 1.1</h2>
+
+<p>Consider how a problem is decomposed by splitting it into smaller parts. </p>
+
+<p>Discuss the advantages of this approach.<br/></p>
+
+<ul>
+	<li><strong>Answers</strong>
+
+		<p>Modules</p>
+
+		<ul>
+			<li><strong>Advantages</strong> of Modular Programming:
+
+				<ul>
+					<li>Algorithm is easily understood</li>
+					<li>Easier to debug, each parts can be refined separately.</li>
+					<li><strong><code>Techopedia Answer</code></strong>
+
+						<ul>
+							<li><code>Less code</code> has to be written.</li>
+							<li>A single procedure can be developed for <code>reuse</code>, eliminating the need to retype the code many times.</li>
+							<li>Programs can be designed more easily because a <code>small team deals</code>with only a small part of the entire code.</li>
+							<li>Modular programming allows many programmers to <code>collaborate</code> on the same application.</li>
+							<li>The code is stored across multiple files.</li>
+							<li>Code is <code>short, simple and easy</code> to understand.</li>
+							<li>Errors can easily be identified, as they are localized to a subroutine or function.</li>
+							<li>The same code can be used in many applications.</li>
+							<li>The scoping of variables can easily be controlled.</li>
+						</ul>
+
+						<p><a href="https://www.techopedia.com/definition/25972/modular-programming">What is Modular Programming? - Definition from Techopedia</a></p></li>
+				</ul></li>
+			<li><strong>Disadvantages</strong> of Modular Programming:
+
+				<ul>
+					<li>Too much module reduces the performance</li>
+					<li>Excessive or poor modulization make code difficult to read</li>
+				</ul></li>
+		</ul></li>
+</ul>
+
+<h2>TASK 1.2</h2>
+
+<p>Design a modular program to implement the activity described in TASK 1.</p>
+
+<p>Produce a structure chart to represent the modular structure of the solution.</p>
+
+<p>The structure chart should address:</p>
+
+<ul>
+	<li>the sequence of module execution</li>
+	<li>any module selection or iteration</li>
+	<li>the parameters that are passed between the module</li>
+	<li><strong>Answer</strong></li>
+</ul>
+
+<h3>Stepwise Refinement — Display</h3>
+
+<ol>
+	<li>Input club names</li>
+	<li>Input who has registered with the club they have chosen, error detection, input 0 to exit</li>
+	<li>Display the number of students registered for each club
+
+		<p>tally = []</p>
+
+		<p>hobbies = [&#39;Reading&#39;, &#39;Computer Games&#39;, &#39;Sports&#39;, &#39;Programming&#39;, &#39;TV&#39;] #TODO: Add club name input system</p>
+
+		<p>file_handle = open(&#39;Hobbies.txt&#39;, &#39;w&#39;)</p>
+
+		<p># 1 for Reading, 2 for computer games</p>
+
+		<p># 3 for Sport, 4 for Programming, 5 for TV</p>
+
+		<p># 0 to end input</p>
+
+		<p>while True:</p>
+
+<pre><code>choice = int(input(
+    &#39;1 for Reading, 2 for computer games, 3 for Sport, 4 for Programming, 5 for TV, 0 to end input&#39;
+))
+if choice &gt;= 1 and choice &lt;= 5:
+    tally.append(choice)
+elif choice == 0:
+    break
+else:
+    print(&#39;Invalid Input&#39;)</code></pre>
+
+		<p>count = [0,0,0,0,0]</p>
+
+		<p>for item in tally:</p>
+
+<pre><code>print(hobbies[item-1])
+file_handle.write(hobbies[item-1]+&#39;\n&#39;)
+count[item-1] += 1</code></pre>
+
+		<p>for i in range(5):</p>
+
+<pre><code>print(&#39;{0:&gt;5} | {1:^20} | {2:&lt;5}&#39;.format(i, hobbies[i], count[i] * &#39;\\&#39;))</code></pre>
+
+		<p>file_handle.close()</p>
+
+		<p>file_read = open(&#39;Hobbies.txt&#39;, &#39;r&#39;)</p>
+
+		<p>lines =file_read.readlines()</p>
+
+		<p>init_array = []</p>
+
+		<p>for line in lines:</p>
+
+<pre><code>init_array.append(line)</code></pre>
+
+		<p>print(init_array)</p>
+
+		<p>for line in (init_array):</p>
+
+<pre><code>print(line)</code></pre></li>
+</ol>
+
+<h2>TASK 1.3</h2>
+
+<p>For each module, decide whether the solution should be implemented as a procedure or a function.</p>
+
+<p>Justify your choices.</p>
+
+<p>Produce <strong>pseudocode</strong> headers for each module.</p>
+
+<hr />
+
+<h1>TASK 2 — Algorithms, arrays and pseudocode</h1>
+
+<p>Declare an array to store multiple pieces of data for your activity in TASK 1. For example, a 10 array of</p>
+
+<p><code>STRING</code> could store the names of students in a class.</p>
+
+<h2>TASK 2.1</h2>
+
+<p>Design an algorithm to search for a specific value in the array and output the array index where the</p>
+
+<p>value is found.</p>
+
+<p>Consider the differences between algorithms that search for a single rather than multiple instances of</p>
+
+<p>the value.</p>
+
+<p>Document the algorithm using:</p>
+
+<ul>
+	<li>structured English</li>
+	<li>a program flowchart</li>
+	<li>pseudocode.</li>
+</ul>
+
+<h2>TASK 2.2</h2>
+
+<p>Design an algorithm to manipulate data in the array, for example by sorting.</p>
+
+<p>Document the algorithm as in TASK 2.1.</p>
+
+<hr />
+
+<h1>TASK 3 — Programs Containing Several Components</h1>
+
+<p>A library maintains a list of books. The list is saved in a text file, where each line of the file represents</p>
+
+<p>one book.</p>
+
+<h2>TASK 3.1</h2>
+
+<p>Consider the information that should be included in the text file other than the title and the author.</p>
+
+<h2>TASK 3.2</h2>
+
+<p>Consider that this is a text file, which means that all information will be saved in <code>STRING</code> format.</p>
+
+<p>Consider the implications of storing numeric information, such as the number of copies of each book.</p>
+
+<p>Define the format of each line of the file so that each piece of information may be easily extracted.</p>
+
+<h2>TASK 3.3</h2>
+
+<p>Design a program in <strong>pseudocode</strong> that has a menu-driven interface and will perform the following tasks:</p>
+
+<ol>
+	<li>Add a new book to the text file. Include validation of the different pieces of information as appropriate.</li>
+	<li>Search for books written by a given author. Output the title of any books found, or a suitable message if no books by the given author are found.</li>
+	<li>End the program.</li>
+</ol>
+
+<h2>TASK 3.4 — Writing program code</h2>
+
+<p>Convert your pseudocode into <strong>program code</strong>.</p>
+
+<h2>TASK 3.5 — Testing</h2>
+
+<p>Consider how the program produced in TASK 3.4 may be tested.</p>
+
+<hr />
+
+<h1>TASK 4 — Algorithm modification</h1>
+
+<p>Additional information needs to be saved for each book, such as a publication date.</p>
+
+<p>An additional task is needed to create a new file from the original file. The task will prompt the user to input the additional information for each book.</p>
+
+<p>Consider possible validation of the additional information.</p>
+
+<p>Write <strong>program code</strong> for the additional task.</p>
+
+</body>
+</html>
+
